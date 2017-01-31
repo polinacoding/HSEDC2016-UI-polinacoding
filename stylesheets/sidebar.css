@@ -1,0 +1,45 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid lightgrey;
+  overflow: hidden;
+}
+
+.sidebarMenu {
+  width: calc(100% + 20px);
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.sidebarMenuItem:hover .sidebarSubmenu {
+  display: block;
+}
+
+.sidebarMenuItem > div {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.sidebarMenuItem > div:hover {
+  background: lightgrey;
+}
+
+.sidebarSubmenu {
+  display: none;
+}
+
+.sidebarSubmenuItem {
+  height: 50px;
+  padding: 10px 10px 10px 20px;
+  line-height: 30px;
+}
+
+.sidebarSubmenuItem:hover {
+  background: lightgrey;
+}

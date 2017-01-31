@@ -1,0 +1,50 @@
+.menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 300px);
+  height: 70px;
+  margin-left: 300px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.userMenu {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.userMenu::before {
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  font-family: FontAwesome;
+  font-size: 30px;
+  content: '\f2be';
+}
+
+.userMenu ul {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  display: none;
+  width: 220px;
+  padding: 10px 0;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+}
+
+.userMenu:hover ul {
+  display: block;
+}
+
+.userMenu li {
+  padding: 0 10px;
+  line-height: 50px;
+}
+
+.userMenu li:hover {
+  background: lightgrey;
+}
