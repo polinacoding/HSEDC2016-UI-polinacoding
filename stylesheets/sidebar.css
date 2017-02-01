@@ -20,9 +20,10 @@
 }
 
 .sidebarMenuItem > div {
+  position: relative;
   width: 300px;
   height: 50px;
-  padding: 10px;
+  padding: 10px 10px 10px 60px;
   line-height: 30px;
 }
 
@@ -30,13 +31,37 @@
   background: lightgrey;
 }
 
+.sidebarMenuItem > div::before {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: block;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: FontAwesome;
+}
+
+.sidebarMenuItem.apple      > div::before { content: '\f179'; }
+.sidebarMenuItem.behance    > div::before { content: '\f1b4'; }
+.sidebarMenuItem.dropbox    > div::before { content: '\f16b'; }
+.sidebarMenuItem.github     > div::before { content: '\f09b'; }
+.sidebarMenuItem.medium     > div::before { content: '\f23a'; }
+.sidebarMenuItem.pinterest  > div::before { content: '\f0d2'; }
+.sidebarMenuItem.soundcloud > div::before { content: '\f1be'; }
+.sidebarMenuItem.trello     > div::before { content: '\f181'; }
+.sidebarMenuItem.telegram   > div::before { content: '\f2c6'; }
+.sidebarMenuItem.vimeo      > div::before { content: '\f27d'; }
+
 .sidebarSubmenu {
   display: none;
 }
 
 .sidebarSubmenuItem {
   height: 50px;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 60px;
   line-height: 30px;
 }
 

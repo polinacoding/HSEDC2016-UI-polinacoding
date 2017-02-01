@@ -48,3 +48,9 @@
 .userMenu li:hover {
   background: lightgrey;
 }
+
+.userMenu ul::before {
+  width: 20px;
+  height: 20px;
+  background: white;
+}
