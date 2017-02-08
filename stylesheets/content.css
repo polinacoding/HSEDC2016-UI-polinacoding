@@ -1,4 +1,19 @@
 .content {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-left: 300px;
+}
+
+.content .container {
+  margin-bottom: 50px;
+}
+
+.content .row > div {
+  background: rgba(0,0,0,.05);
+  border: 1px solid lightgrey;
+  text-align: center;
+  line-height: 60px;
+}
+
+.content .row {
+  margin-bottom: 10px;
 }
